@@ -2,7 +2,7 @@ import {
   deleteSession,
   postSession,
   postUser
-} from '../utils'
+} from '../utils/session'
 
 // Action Constants
 export const RECEIVE_CURRENT_USER = 'RECEIVE_CURRENT_USER'
