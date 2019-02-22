@@ -5,7 +5,7 @@ import {
 
 const _nullSession = {currentUser: null}
 
-export default (state, action) => {
+export default (state = _nullSession, action) => {
   Object.freeze(state)
 
   switch (action.type) {
@@ -14,6 +14,6 @@ export default (state, action) => {
     case LOGOUT_CURRENT_USER:
       return _nullSession
     default:
-      return _nullSession
+      return state
   }
 }
